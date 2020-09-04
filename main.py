@@ -31,5 +31,5 @@ if __name__ == '__main__':
     uvicorn.run(
         app,
         host=getenv('HOST') or 'localhost',
-        port=int(getenv('PORT')) or 8080
+        port=int(getenv('PORT') or 8080)
     )
