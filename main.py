@@ -30,6 +30,6 @@ async def detect_anime(file: UploadFile = File(...)):
 if __name__ == '__main__':
     uvicorn.run(
         app,
-        host=getenv('HOST') or '0.0.0.0',
+        host=getenv('HOST') or 'localhost',
         port=int(getenv('PORT')) or 8080
     )
